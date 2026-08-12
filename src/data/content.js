@@ -5,7 +5,7 @@ export const VA = {
   niches: "Social Media · Data Entry · Executive Support",
   email: "alvareznathaniel2003@gmail.com", 
   location: "Iloilo City, Philippines (PST)",
-  spots: "Taking 2 new clients — September 2026",
+  spots: "Open for new projects",
   since: 2024,
 };
 

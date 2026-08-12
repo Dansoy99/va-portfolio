@@ -1,6 +1,7 @@
 import { VA } from "../../data/content";
 import SectionHead from "../ui/SectionHead";
 import Reveal from "../ui/Reveal";
+import "./About.css";
 
 export default function About() {
   // Extract just the first name for the greeting and signature

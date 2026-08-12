@@ -3,6 +3,7 @@ import { VA, SERVICES } from "../../data/content";
 import SectionHead from "../ui/SectionHead";
 import Reveal from "../ui/Reveal";
 import useClock from "../../hooks/useClock";
+import "./Contact.css";  
 
 
 const FORMSPREE_ID = "xoeawqoz";

@@ -1,5 +1,6 @@
 import { QUOTES } from "../../data/content";
 import SectionHead from "../ui/SectionHead";
+import "./Testimonials.css";
 
 export default function Testimonials() {
   return (
