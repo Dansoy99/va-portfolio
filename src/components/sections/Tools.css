@@ -1,0 +1,20 @@
+.tools { overflow: hidden; }
+.tools .sec-head { margin: 0 auto 44px; text-align: center; padding: 0 24px; }
+
+.marquee {
+  overflow: hidden; padding: 14px 0;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track { display: flex; gap: 14px; width: max-content; animation: ticker 30s linear infinite; }
+.marquee-track.slow-rev { animation-direction: reverse; animation-duration: 36s; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+.tool {
+  font-family: 'IBM Plex Mono', monospace; font-size: .8rem;
+  border: 1.5px solid var(--ink); background: var(--card);
+  padding: 10px 20px; border-radius: 99px; white-space: nowrap;
+  transition: background-color .2s, color .2s, border-color .4s ease;
+}
+.tool:hover { background: var(--ink); color: var(--paper); }
+.tool-alt { background: var(--butter); color: #1B1813; }
+.tool-alt:hover { background: var(--ink); color: var(--butter); }

@@ -1,0 +1,10 @@
+.to-top {
+  position: fixed; right: 22px; bottom: 22px; width: 46px; height: 46px;
+  border-radius: 50%; background: var(--ink); color: var(--paper);
+  border: 1.5px solid var(--ink); box-shadow: 3px 3px 0 var(--butter);
+  font-size: 1.1rem; z-index: 110;
+  opacity: 0; pointer-events: none; transform: translateY(12px);
+  transition: opacity .3s, transform .3s, background-color .4s ease, color .4s ease, border-color .4s ease;
+}
+.to-top.show { opacity: 1; pointer-events: auto; transform: none; }
+.to-top:hover { transform: translateY(-3px); }

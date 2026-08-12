@@ -1,0 +1,25 @@
+.hero { padding: 150px 0 72px; }
+.hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 56px; align-items: start; }
+
+.dateline {
+  font-size: .68rem; letter-spacing: .16em; color: var(--pine);
+  border: 1px dashed var(--pine); display: inline-block;
+  padding: 5px 10px; border-radius: 99px; margin-bottom: 22px;
+}
+.kicker { font-size: .72rem; letter-spacing: .16em; color: var(--tangerine); margin-bottom: 14px; }
+
+.hero h1 { font-size: clamp(2.6rem, 6.2vw, 4.6rem); }
+.h1-typed { color: var(--pine); }
+.caret {
+  display: inline-block; width: 3px; height: .85em;
+  background: var(--tangerine); margin-left: 4px; vertical-align: -.08em;
+  animation: blink 1s steps(1) infinite;
+}
+
+.lede { margin: 22px 0 30px; max-width: 52ch; color: var(--ink-soft); font-size: 1.08rem; }
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+@media (max-width: 980px) {
+  .hero { padding: 120px 0 56px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+}

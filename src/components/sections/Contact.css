@@ -1,0 +1,43 @@
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+
+.contact-copy { color: var(--ink-soft); max-width: 46ch; margin-bottom: 22px; }
+.contact-email {
+  display: inline-block; font-family: 'Fraunces', serif; font-style: italic;
+  font-size: 1.5rem; color: var(--pine); border-bottom: 2px solid var(--tangerine);
+  padding-bottom: 2px; margin-bottom: 30px; transition: color .2s;
+}
+.contact-email:hover { color: var(--tangerine); }
+
+.clocks { display: grid; gap: 2px; background: var(--ink); border: 1.5px solid var(--ink); border-radius: 10px; overflow: hidden; margin-bottom: 26px; }
+.clocks div { display: flex; justify-content: space-between; background: var(--card); padding: 12px 18px; font-size: .9rem; }
+.clocks span { font-family: 'IBM Plex Mono', monospace; font-size: .7rem; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-soft); padding-top: 3px; }
+.clocks b { font-family: 'IBM Plex Mono', monospace; font-size: .85rem; }
+
+.form-card {
+  background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px;
+  padding: 34px; box-shadow: var(--shadow-lg); display: grid; gap: 18px;
+}
+.form-card label {
+  display: grid; gap: 7px; font-family: 'IBM Plex Mono', monospace;
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .14em; color: var(--ink-soft);
+}
+.form-card input, .form-card select, .form-card textarea {
+  font-family: 'Karla', sans-serif; font-size: .98rem; color: var(--ink);
+  background: var(--paper); border: 1.5px solid var(--ink); border-radius: 8px;
+  padding: 13px 14px; resize: vertical;
+  transition: box-shadow .2s, transform .2s, background-color .45s ease, color .45s ease, border-color .45s ease;
+}
+.form-card input:focus, .form-card select:focus, .form-card textarea:focus {
+  outline: none; box-shadow: 3px 3px 0 var(--butter); transform: translate(-1px, -1px);
+}
+.err { color: #E5484D; letter-spacing: .04em; text-transform: none; font-size: .72rem; }
+
+.form-card.sent { place-items: center; text-align: center; gap: 14px; padding: 52px 34px; }
+.sent-mark {
+  width: 70px; height: 70px; display: grid; place-items: center;
+  border: 2px solid var(--pine); border-radius: 50%; color: var(--pine); font-size: 1.6rem;
+  animation: stampIn .5s cubic-bezier(.2, 1.6, .4, 1) both;
+}
+.form-card.sent p { color: var(--ink-soft); max-width: 36ch; }
+
+@media (max-width: 980px) { .contact-grid { grid-template-columns: 1fr; gap: 44px; } }

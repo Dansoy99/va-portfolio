@@ -1,0 +1,26 @@
+.about-grid { display: grid; grid-template-columns: 360px 1fr; gap: 64px; align-items: start; }
+
+.about-photo {
+  position: relative; border: 1.5px solid var(--ink); border-radius: 10px;
+  overflow: hidden; box-shadow: var(--shadow-lg); transform: rotate(-1.5deg);
+}
+.about-photo::before, .about-photo::after {
+  content: ""; position: absolute; width: 96px; height: 26px;
+  background: rgba(242, 199, 74, .8); border: 1px solid rgba(27, 24, 19, .25); z-index: 2;
+}
+.about-photo::before { top: -8px; left: 22px; transform: rotate(-8deg); }
+.about-photo::after { bottom: -8px; right: 22px; transform: rotate(6deg); }
+
+.about-bio { font-size: 1.06rem; color: var(--ink-soft); max-width: 58ch; margin-bottom: 28px; }
+
+.facts { list-style: none; border-top: 1.5px solid var(--ink); margin-bottom: 26px; }
+.facts li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 4px; border-bottom: 1px dashed var(--line); font-size: .92rem; }
+.facts span { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-soft); padding-top: 3px; }
+.facts b { font-weight: 700; text-align: right; }
+
+.signature { font-family: 'Fraunces', serif; font-style: italic; font-size: 1.6rem; color: var(--pine); }
+
+@media (max-width: 980px) {
+  .about-grid { grid-template-columns: 1fr; gap: 44px; }
+  .about-photo { max-width: 380px; }
+}

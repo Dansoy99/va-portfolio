@@ -1,0 +1,15 @@
+.stats-band { background: var(--ink); color: var(--paper); padding: 76px 0; border-bottom: 1.5px solid var(--ink); }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+
+.stat { text-align: center; position: relative; }
+.stat + .stat::before {
+  content: "✦"; position: absolute; left: -19px; top: 50%;
+  transform: translateY(-50%); color: var(--tangerine); font-size: .8rem;
+}
+.stat-num { display: block; font-family: 'Fraunces', serif; font-size: clamp(2.4rem, 4.5vw, 3.6rem); color: var(--butter); line-height: 1.1; }
+.stat-label { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; text-transform: uppercase; letter-spacing: .16em; opacity: .75; }
+
+@media (max-width: 980px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 20px; }
+  .stat + .stat::before { display: none; }
+}

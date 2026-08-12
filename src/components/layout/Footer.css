@@ -1,0 +1,4 @@
+.footer { border-top: 1.5px solid var(--ink); padding: 36px 0; background-color: var(--paper); transition: background-color .45s ease, border-color .45s ease; }
+.footer-in { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: .85rem; }
+.footer .mono { font-size: .7rem; color: var(--ink-soft); }
+.footer a { border-bottom: 1.5px solid var(--tangerine); padding-bottom: 1px; font-weight: 700; }

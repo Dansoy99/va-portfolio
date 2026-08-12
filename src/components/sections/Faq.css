@@ -1,0 +1,15 @@
+.faq-wrap { max-width: 780px; margin: 0 auto; }
+
+.faq-item { border-bottom: 1.5px solid var(--ink); transition: border-color .45s ease; }
+.faq-q {
+  width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  background: none; border: 0; padding: 24px 4px; text-align: left;
+  font-family: 'Fraunces', serif; font-size: 1.25rem; font-weight: 560; color: var(--ink);
+  transition: color .45s ease;
+}
+.faq-q .fx { font-family: 'IBM Plex Mono', monospace; font-size: 1.4rem; color: var(--tangerine); transition: transform .3s; }
+.faq-item.open .fx { transform: rotate(45deg); }
+
+.faq-a { max-height: 0; overflow: hidden; transition: max-height .45s cubic-bezier(.2,.7,.2,1); }
+.faq-item.open .faq-a { max-height: 340px; }
+.faq-a p { padding: 0 4px 26px; color: var(--ink-soft); max-width: 64ch; }
