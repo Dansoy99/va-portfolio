@@ -71,13 +71,13 @@ export const FAQS = [
 
 export const PLANS = {
   featured: {
-    name: "Executive Assistant Retainer", price: "$480", unit: "/month · 40 hrs", tag: "MOST BOOKED",
-    lines: [["Response time", "< 24 hrs"], ["Coverage", "Mon–Fri"], ["Updates", "Daily async"], ["Unused hours", "Roll over 1 mo"]],
+    name: "Executive Assistant", price: "$10–15", unit: "/hour", tag: "MOST BOOKED",
+    lines: [["Minimum", "5 hrs / week"], ["Billing", "Weekly invoice"], ["Coverage", "Mon–Fri"], ["Updates", "Daily async"]],
     includes: ["Inbox triage & calendar management", "Travel bookings + one-page itineraries", "Meeting minutes & follow-up chasing", "Weekly priorities report", "Document & deck prep"],
     cta: "Start with a call",
   },
   side: [
-    { name: "Social Media Manager", price: "$300", unit: "/month", includes: ["12 designed posts, 3 platforms", "Captions + hashtags in your voice", "Scheduling & publishing", "30 min/day community engagement", "Monthly analytics report"], cta: "Grow with me" },
+    { name: "Social Media Manager", price: "$8–15", unit: "/hour", includes: ["Content calendars & scheduling", "Captions + hashtags in your voice", "Canva-designed posts", "Community engagement", "Monthly analytics report"], cta: "Grow with me" },
     { name: "Data Entry & Cleanup", price: "$10", unit: "/hour · 5 hr min", includes: ["65+ WPM, 98% accuracy", "De-duping & validation", "Sheets, Excel, Airtable", "Free 20-row sample first"], cta: "Get a quote" },
   ],
 };

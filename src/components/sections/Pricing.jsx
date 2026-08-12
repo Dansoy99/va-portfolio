@@ -12,7 +12,7 @@ export default function Pricing() {
         <SectionHead
           eyebrow="THE RATE CARD"
           title={<>Simple numbers, <em>no surprises.</em></>}
-          sub="Every plan includes an NDA, daily async updates, and a shared task board."
+          sub="Simple hourly rates — pay only for the hours you use. Every hour includes an NDA, async updates, and a shared task board."
         />
         <div className="plans">
           <Reveal className="plan plan-feature">
